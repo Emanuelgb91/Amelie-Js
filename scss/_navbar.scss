@@ -1,0 +1,12 @@
+.nav li a.nav-link {
+  color: black;
+  transition: font-size 0.5s;
+}
+
+.nav li a.nav-link:hover {
+  font-size: 1.1rem;
+  color: rgb(168, 168, 168);
+}
+.menu__link--active {
+  text-decoration: underline !important;
+}

@@ -1,0 +1,27 @@
+.tarjeta {
+  &__titulo {
+    color: $color-gral;
+  }
+  &__texto {
+    font-weight: normal;
+    // aplicacion de operacion
+    font-size: $tam-text * 2;
+
+    &--importante {
+      font-weight: $negrita;
+    }
+  }
+}
+// aplicacion de condicionales
+$color: negro;
+.card-body {
+  @if $color == negro {
+    background-color: white;
+  } @else if $color == rojo {
+    background-color: blue;
+  } @else if $color == azul {
+    background-color: red;
+  } @else if $color == amarillo {
+    background-color: green;
+  }
+}

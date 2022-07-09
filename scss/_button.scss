@@ -1,0 +1,9 @@
+td a {
+  text-decoration: none;
+  color: black;
+  transition: font-size 0.5s;
+}
+td a:hover {
+  font-size: 1.1rem;
+  color: rgb(168, 168, 168);
+}

@@ -1,0 +1,42 @@
+h1,
+h2 {
+  font-size: 1.5rem !important;
+  background-color: #eceeee;
+  background-image: linear-gradient(#edeaea, rgb(255, 255, 255));
+  padding-bottom: 2rem;
+}
+span {
+  font-weight: bold;
+}
+h5 a {
+  text-decoration: none;
+  color: white;
+}
+
+// MEDIAS QUERIES
+@media screen and (max-width: 1280px) {
+  .navbar__plegable {
+    display: none;
+  }
+  .logos__redes {
+    display: none;
+  }
+  .img__cont {
+    display: none;
+  }
+}
+
+.NT__titulo {
+  margin-top: 5rem;
+}
+
+// VARIABLES
+$color-gral: rgb(168, 168, 168);
+$color-fondo: #eceeee;
+$encabezado: 1.5rem !important;
+$degradado: linear-gradient(#edeaea, rgb(255, 255, 255));
+$negrita: bold;
+
+$ancho: 600px;
+$alto: 400px;
+$tam-text: 0.5rem;

@@ -1,0 +1,11 @@
+{
+  "name": "amelie-scss",
+  "version": "1.0.0",
+  "description": "Centro De Estetica",
+  "main": "index.js",
+  "scripts": {
+    "pi:sass": "sass --watch scss:css"
+  },
+  "author": "Emanuel Gonzalez Bergonzi",
+  "license": "ISC"
+}
