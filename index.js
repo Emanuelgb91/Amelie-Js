@@ -54,6 +54,7 @@ let edad = parseInt(prompt("ingrese su edad"));
 
     }else{
         alert ("lo siento eres menor de edad")
+        alert ("hola")
     }
 }
 
