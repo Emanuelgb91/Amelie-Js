@@ -10,6 +10,7 @@ class datosPersonales {
 }
 
 const almacenarDatosPedido = [];
+console.log(almacenarDatosPedido)
 
 let respuesta = confirm("¿Bienvenido,desea realizar una consulta?");
 if(respuesta){
@@ -72,7 +73,7 @@ let edad = parseInt(prompt("ingrese su edad"));
             }
             const informacionPedido = new datosPersonales (nombre,apellido,domicilio,edad,telefono,consultaPrecio)
             almacenarDatosPedido.push(informacionPedido)
-            
+                        
             consultaPrecio = prompt("ingrese otra consulta\n"+
             "1- Serum\n"+
             "2- Acido\n"+
