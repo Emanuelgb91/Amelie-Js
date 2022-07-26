@@ -72,4 +72,34 @@ h5 a {
   background-color: white;
 }
 
+.carrito{
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+.tabla__producto{
+  display: flex;
+}
+.tabla__producto > img{
+  width: 2rem;
+  object-fit: contain;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.tabla__cantidad > input{
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.btn-danger{
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+}
+
 /*# sourceMappingURL=styles.css.map */

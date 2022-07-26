@@ -58,7 +58,44 @@
       <div><!-- LOGO REDES -->
         <a class="logosRedes" href="https://api.whatsapp.com/send?phone=5493415857178"><img src="./Imagenes/whatsapp.png" alt="logo whatsapp"/></a>
         <a class="logosRedes" href="https://www.instagram.com/amelie.esteticaysalud/"><img src="./Imagenes/instagram.png" alt="logo instagram"/></a>
-        <img src="Imagenes/Carrito.png" alt="Imagen Carrito De Compras">
+        <!-- <img src="Imagenes/Carrito.png" alt="Imagen Carrito De Compras"> -->
+        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="Imagenes/Carrito.png" alt="Imagen Carrito De Compras"></button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Mi Carrito</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td class="tabla__producto"><img src="imagenes/producto1.png" alt=""><h6 class="titulo__imagen">agua micelar 3 en 1</h6></td>
+                <td class="tabla__precio"><p>$1000</p></td>
+                <td class="tabla__cantidad"><input type="number" min="1" value="1"><button class="delete btn btn-danger">X</button></td>
+              </tr>
+             </tbody>
+          </table>
+          <br><br>
+          <div class="row mx-4">
+            <div class="col">
+              <h3 class="totalCarrito"> Total: 0</h3>
+            </div>
+            <div class="col d-flex justify-content-end">
+              <button class="btn btn-success"> Comprar</button>
+            </div>
+          </div>
+          
+        </div>
+        </div>
       </div><!-- FIN LOGOS REDES -->
     </div>
       </header><!-- FIN HEADER -->
@@ -81,9 +118,9 @@
                     Captura las impurezas como un imán para limpiar y desmaquillar perfectamente las pieles sensibles, sin necesidad de frotar ni de aclarar.
                     Proporcionan alivio calmante para las pieles sensibles y estresadas.
                     La piel, liberada del maquillaje, queda detoxificada y luminosa, sin sensaciones de tirantez o incomodidad.
-                    <p><span>Precio $1.091</span></p>
+                    <p><span class="precio">Precio $1.091</span></p>
                     <div>
-                      <small class="text-muted"><button type="button" class="btn btn-secondary ">Agregar</button></small>
+                      <small class="text-muted"><button type="button" class="btnAgregar btn btn-secondary ">Agregar</button></small>
                     </div>                  
                   </div>
                 </div>              
@@ -103,9 +140,9 @@
                 <div class="collapse" id="collapseExample2">
                   <div class="card card-body">
                     Protege de las agresiones externas y el estrés ambiental. Estimula la reparación tisular. 
-                    <p><span>Precio $1.742</span></p>
+                    <p><span class="precio">Precio $1.742</span></p>
                     <div>
-                      <small class="text-muted"><button type="button" class="btn btn-secondary">Agregar</button></small>
+                      <small class="text-muted"><button type="button" class="btnAgregar btn btn-secondary">Agregar</button></small>
                     </div>                  
                   </div>
                 </div>              
@@ -127,7 +164,7 @@
                     ultraliviana, con efecto Glow. Cuida la piel protegiéndola de las agresiones externas y el stress ambiental.
                     <p><span>Precio $1.200</span></p>
                     <div>
-                      <small class="text-muted"><button type="button" class="btn btn-secondary">Agregar</button></small>
+                      <small class="text-muted"><button type="button" class="btnAgregar btn btn-secondary">Agregar</button></small>
                     </div>                  
                   </div>
                 </div>              
@@ -150,7 +187,7 @@
                     Afina los poros, dejando la piel radiante y conservando toda su hidratación.</p>
                     <p><span>Precio $1.227</span></p>
                     <div>
-                      <small class="text-muted"><button type="button" class="btn btn-secondary">Agregar</button></small>
+                      <small class="text-muted"><button type="button" class="btnAgregar btn btn-secondary">Agregar</button></small>
                     </div>                  
                   </div>
                 </div>              
@@ -176,7 +213,7 @@
                     Conserva la hidratación natural de la piel.</p>
                     <p><span>Precio $1.478</span></p>
                     <div>
-                      <small class="text-muted"><button type="button" class="btn btn-secondary">Agregar</button></small>
+                      <small class="text-muted"><button type="button" class="btnAgregar btn btn-secondary">Agregar</button></small>
                     </div>                  
                   </div>
                 </div>              
@@ -200,7 +237,7 @@
                   Fórmula apropiada para uso diario.</p>
                     <p><span>Precio $490</span></p>
                     <div>
-                      <small class="text-muted"><button type="button" class="btn btn-secondary">Agregar</button></small>
+                      <small class="text-muted"><button type="button" class="btnAgregar btn btn-secondary">Agregar</button></small>
                     </div>                  
                   </div>
                 </div>              
@@ -223,7 +260,7 @@
                   Exfoliante facial que remueve gentilmente las células de la superficie, impurezas y contaminantes dejando la piel suave y aterciopelada.</p>
                     <p><span>Precio $725</span></p>
                     <div>
-                      <small class="text-muted"><button type="button" class="btn btn-secondary">Agregar</button></small>
+                      <small class="text-muted"><button type="button" class="btnAgregar btn btn-secondary">Agregar</button></small>
                     </div>                  
                   </div>
                 </div>              
@@ -248,7 +285,7 @@
                   Deja la piel libre de impurezas y visiblemente clarificada.</p>
                     <p><span>Precio $1.086</span></p>
                     <div>
-                      <small class="text-muted"><button type="button" class="btn btn-secondary">Agregar</button></small>
+                      <small class="text-muted"><button type="button" class="btnAgregar btn btn-secondary">Agregar</button></small>
                     </div>                  
                   </div>
                 </div>              
@@ -273,7 +310,7 @@
                   Express, práctico y de fácil aplicación, no necesita ser retirado o enjuagado.</p>
                     <p><span>Precio $1.455</span></p>
                     <div>
-                      <small class="text-muted"><button type="button" class="btn btn-secondary">Agregar</button></small>
+                      <small class="text-muted"><button type="button" class="btnAgregar btn btn-secondary">Agregar</button></small>
                     </div>                  
                   </div>
                 </div>              
@@ -297,7 +334,7 @@
                     Aporta minerales de propiedades desensibilizantes, que contribuyen a calmar y suavizan las pieles más sensibles y maltratadas.</p>
                     <p><span>Precio $1.496</span></p>
                     <div>
-                      <small class="text-muted"><button type="button" class="btn btn-secondary">Agregar</button></small>
+                      <small class="text-muted"><button type="button" class="btnAgregar btn btn-secondary">Agregar</button></small>
                     </div>                  
                   </div>
                 </div>              
@@ -321,7 +358,7 @@
                     Sella y absorbe la humedad y nutrientes, haciendo la piel mas saludable, suave y tersa. Indicado sobre todo tipo de pieles, y especialmente en deshidratadas.</p>
                     <p><span>Precio $1.696</span></p>
                     <div>
-                      <small class="text-muted"><button type="button" class="btn btn-secondary">Agregar</button></small>
+                      <small class="text-muted"><button type="button" class="btnAgregar btn btn-secondary">Agregar</button></small>
                     </div>                  
                   </div>
                 </div>              
@@ -346,7 +383,7 @@
                   Refuerza la barrera cutánea.</p>
                     <p><span>Precio $1.496</span></p>
                     <div>
-                      <small class="text-muted"><button type="button" class="btn btn-secondary">Agregar</button></small>
+                      <small class="text-muted"><button type="button" class="btnAgregar btn btn-secondary">Agregar</button></small>
                     </div>                  
                   </div>
                 </div>              
@@ -371,7 +408,7 @@
                   Refuerza la barrera cutánea.</p>
                     <p><span>Precio $946</span></p>
                     <div>
-                      <small class="text-muted"><button type="button" class="btn btn-secondary">Agregar</button></small>
+                      <small class="text-muted"><button type="button" class="btnAgregar btn btn-secondary">Agregar</button></small>
                     </div>                  
                   </div>
                 </div>              
@@ -394,7 +431,7 @@
                     Posee extractos botánicos de manzanilla, Tilo, Caléndula y Hamamelis de acción descongestiva que elimina las rojeces.</p>
                     <p><span>Precio $1.409</span></p>
                     <div>
-                      <small class="text-muted"><button type="button" class="btn btn-secondary">Agregar</button></small>
+                      <small class="text-muted"><button type="button" class="btnAgregar btn btn-secondary">Agregar</button></small>
                     </div>                  
                   </div>
                 </div>              
