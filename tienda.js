@@ -9,17 +9,28 @@ buttons.forEach(
 
 function agregarAlCarrito(e){
     const button = e.target
-    const item = button.closest(".tarjeta")
-    const itemTitulo = item.querySelector('.tarjeta__titulo').textContent;
+    const item = button.closest(".tarjeta");
+    const itemTitulo = item.querySelector('.tarjeta__titulo');
     const itemPrecio = item.querySelector('.precio').textContent;
-        
-    const nuevoProducto = {
-        titulo: itemTitulo,
-        precio: itemPrecio,
-        id: `${Math.random()*1000}`,
-        cantidad: 1
+    const itemId = itemTitulo.dataset.id;
+        // console.log("contenido de item titulo",itemTitulo.dataset)
+
+    let indiceItem = carrito.findIndex((item) => (item.id === itemId));
+    if (indiceItem === -1 ) {
+        const nuevoProducto = {
+            titulo: itemTitulo.textContent,
+            precio: itemPrecio,
+            id: itemId,
+            cantidad: 1
+        }
+        carrito.push(nuevoProducto); 
+    }else{
+        let nuevaCantidad = carrito[indiceItem].cantidad +1
+        carrito[indiceItem].cantidad = nuevaCantidad
+
     }
-    carrito.push(nuevoProducto);
+
+    agregarAlLocalStorage()
     renderCarrito();
 }
 
@@ -52,12 +63,14 @@ function totalCarrito(){
     })
 
     totalItemCarrito.innerHTML = `total $${total}`
+    
 }
 
 function removerItemCarrito(id){
     let nuevoCarrito = []
     nuevoCarrito = carrito.filter((item) => (item.id !== id ))
     carrito = nuevoCarrito
+    agregarAlLocalStorage()
     renderCarrito()
     
 }
@@ -68,6 +81,19 @@ function sumarLaCantidad(id, event){
     let indiceItem = carrito.findIndex((item) => (item.id === id))
     nuevoCarrito[indiceItem].cantidad = nuevaCantidad
     carrito = nuevoCarrito
+    agregarAlLocalStorage()
     renderCarrito()
     
+}
+
+function agregarAlLocalStorage(){
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
+window.onload = function() {
+    const guardado = JSON.parse(localStorage.getItem('carrito'));
+    if(guardado){
+        carrito = guardado;
+        renderCarrito();
+    }
 }
