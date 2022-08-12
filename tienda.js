@@ -3,7 +3,18 @@ const tbody = document.querySelector('.tbody')
 let carrito = []
 buttons.forEach(
     function (button){
-        button.addEventListener('click', function(e){agregarAlCarrito(e)})
+        button.addEventListener('click', function(e){agregarAlCarrito(e)
+            Toastify({
+                text: "Producto Agregado",
+                duration: 2000,
+                newWindow: true,
+                gravity: "top",
+                position: "center", 
+                stopOnFocus: true,
+                style: {
+                background: "linear-gradient(to right, #00b09b, #96c93d)",
+                },
+        }).showToast();})
     }
 )
 
@@ -13,7 +24,6 @@ function agregarAlCarrito(e){
     const itemTitulo = item.querySelector('.tarjeta__titulo');
     const itemPrecio = item.querySelector('.precio').textContent;
     const itemId = itemTitulo.dataset.id;
-        // console.log("contenido de item titulo",itemTitulo.dataset)
 
     let indiceItem = carrito.findIndex((item) => (item.id === itemId));
     if (indiceItem === -1 ) {
@@ -29,7 +39,6 @@ function agregarAlCarrito(e){
         carrito[indiceItem].cantidad = nuevaCantidad
 
     }
-
     agregarAlLocalStorage()
     renderCarrito();
 }
@@ -67,6 +76,17 @@ function totalCarrito(){
 }
 
 function removerItemCarrito(id){
+    Toastify({
+        text: "Producto Eliminado",
+        duration: 2000,
+        newWindow: true,
+        gravity: "top",
+        position: "center", 
+        stopOnFocus: true,
+        style: {
+        background: "linear-gradient(to right, #ff0000, #c9673d)",
+            },
+        }).showToast();
     let nuevoCarrito = []
     nuevoCarrito = carrito.filter((item) => (item.id !== id ))
     carrito = nuevoCarrito
