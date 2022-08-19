@@ -1,20 +1,145 @@
 [
-    {"id": 1, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto1.png"},
-    {"id": 2, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto2.png"},
-    {"id": 3, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto3.png"},
-    {"id": 4, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto4.png"},
-    {"id": 5, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto5.png"},
-    {"id": 6, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto6.png"},
-    {"id": 7, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto7.png"},
-    {"id": 8, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto8.png"},
-    {"id": 9, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto9.png"},
-    {"id": 10, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto10.png"},
-    {"id": 11, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto11.png"},
-    {"id": 12, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto12.png"},
-    {"id": 13, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto13.png"},
-    {"id": 14, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto14.png"},
-    {"id": 15, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto15.png"},
-    {"id": 16, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto16.png"},
-    {"id": 17, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto17.png"},
-    {"id": 18, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto18.png"}
+    {
+        "id": 1, 
+        "nombre": "Agua Micelar 3 en 1", 
+        "descripcion": "Captura las impurezas como un imán para limpiar y desmaquillar perfectamente las pieles sensibles, sin necesidad de frotar ni de aclarar. Proporcionan alivio calmante para las pieles sensibles y estresadas. La piel, liberada del maquillaje, queda detoxificada y luminosa, sin sensaciones de tirantez o incomodidad", 
+        "precio": 1091, 
+        "imagen": "Imagenes/producto1.png"
+    },
+
+    {
+        "id": 2, 
+        "nombre": "Serum De Celulas Madres", 
+        "descripcion": "Protege de las agresiones externas y el estrés ambiental. Estimula la reparación tisular. ", 
+        "precio": 1050, 
+        "imagen": "Imagenes/producto2.png"
+    },
+
+    {
+        "id": 3, 
+        "nombre": "Body Glow Milk", 
+        "descripcion": "ultraliviana, con efecto Glow. Cuida la piel protegiéndola de las agresiones externas y el stress ambiental.", 
+        "precio": 1200, 
+        "imagen": "Imagenes/producto3.png"
+    },
+
+    {
+        "id": 4, 
+        "nombre": "Loción Astringente Matificante", 
+        "descripcion": "Refina la piel, elimina impurezas y controla el sebo.Creado especificamente para pieles oleosas con componentes para el control de la grasitud que ecualizan las secreciones sebaceas. Afina los poros, dejando la piel radiante y conservando toda su hidratación.", 
+        "precio": 1227, 
+        "imagen": "Imagenes/producto4.png"
+    },
+
+    {
+        "id": 5, 
+        "nombre": "Gel Limpiador Purificante", 
+        "descripcion": "Limpia impurezas, elimina el exceso de sebo y el maquillaje sin secar la piel. Deja la piel suave y luminosa, sin residuos. Su utilización diaria evita el brillo que genera la oleosidad excesiva. Su sofisticada fórmula da una sensación calmante y refresacante. Conserva la hidratación natural de la piel.", 
+        "precio": 1478, 
+        "imagen": "Imagenes/producto5.png"
+    },
+    
+    {
+        "id": 6, 
+        "nombre": "Toallitas Desmaquillantes De Agua Miscelar", 
+        "descripcion": "Capturan las impurezas más facilmente e incorporan Aminoácidos con minerales para calmar las irritaciones y aliviar los picores o molestias cutáneas. Toallitas amplias, extra suaves y muy humedecidas que abarcan la totalidad del rostro, logrando una limpieza refrescante y sin sensación de tirantez. Fórmula apropiada para uso diario.", 
+        "precio": 490, 
+        "imagen": "Imagenes/producto6.png"
+    },
+    
+    {
+        "id": 7, 
+        "nombre": "Scrub De Rosas Aplinas", 
+        "descripcion": "Renovación profunda para tu piel! Exfoliante facial que remueve gentilmente las células de la superficie, impurezas y contaminantes dejando la piel suave y aterciopelada.", 
+        "precio": 725, 
+        "imagen": "Imagenes/producto7.png"
+    },
+    
+    {
+        "id": 8, 
+        "nombre": "Scrub Suave Purificante", 
+        "descripcion": "Elimina impurezas y células córneas de la superficie de la piel. Afina la piel y suaviza la superficie. Minimiza el aspecto de los poros.", 
+        "precio": 1086, 
+        "imagen": "Imagenes/producto8.png"
+    },
+
+    {
+        "id": 9, 
+        "nombre": "Desmaquillante De Ojos y Labios", 
+        "descripcion": "Disuelve instantáneamente los maquillajes waterproof. Deja la piel libre de residuos y maquillaje de todo tipo, especialmente aquellos a prueba de agua. Después de su uso, la piel queda fresca e hidratada. Fórmula ultra-fresca sin efecto graso, disuelve instantáneamente maquillajes waterproof o cualquier otro.Express, práctico y de fácil aplicación, no necesita ser retirado o enjuagado.", 
+        "precio": 1455, 
+        "imagen": "Imagenes/producto9.png"
+    },
+
+    {
+        "id": 10, 
+        "nombre": "Leche Limpiadora Suavizante", 
+        "descripcion": "Respeta la integridad cutánea al tiempo que asegura un desmaquillaje perfecto Mantiene el equilibrio de hidratación de la piel, haciéndolo especialmente apropiado para pieles secas. Aporta minerales de propiedades desensibilizantes, que contribuyen a calmar y suavizan las pieles más sensibles y maltratadas.", 
+        "precio": 1496, 
+        "imagen": "Imagenes/producto10.png"
+    },
+
+    {
+        "id": 11, 
+        "nombre": "Serum Ácido Hialuronico", 
+        "descripcion": "Retiene la máxima cantidad de agua que la epidermis pueda absorber, así la piel estará mejor preparada para resistir la formación de arrugas y deterioros, desacelerando el proceso de envejecimiento. Incrementa la elasticidad en la piel, disminuye la apariencia de arrugas y reduce el tamaño de los poros. Sella y absorbe la humedad y nutrientes, haciendo la piel mas saludable, suave y tersa. Indicado sobre todo tipo de pieles, y especialmente en deshidratadas.", 
+        "precio": 1696, 
+        "imagen": "Imagenes/producto11.png"
+    },
+
+    {
+        "id": 12, 
+        "nombre": "Crema Hidratante Ligera", 
+        "descripcion": "Hidratación inmediata que permanece por 24 horas. Tiene propiedades calmantes y desensibilizantes. Refresca y brinda luminosidad. Refuerza la barrera cutánea.", 
+        "precio": 1496, 
+        "imagen": "Imagenes/producto12.png"
+    },
+
+   {
+        "id": 13, 
+        "nombre": "Crema Hidratante Ligera", 
+        "descripcion": "Hidratación inmediata que permanece por 24 horas. Tiene propiedades calmantes y desensibilizantes. Refresca y brinda luminosidad. Refuerza la barrera cutánea.", 
+        "precio": 946, 
+        "imagen": "Imagenes/producto13.png"
+    },
+
+    {
+        "id": 14, 
+        "nombre": "Espuma Limpiadora", 
+        "descripcion": "Suave espuma limpiadora que elimina impurezas, grasitud y restos de maquillaje sin irritar la piel. Posee extractos botánicos de manzanilla, Tilo, Caléndula y Hamamelis de acción descongestiva que elimina las rojeces.", 
+        "precio": 1409, 
+        "imagen": "Imagenes/producto14.png"
+    },
+
+    {
+        "id": 15, 
+        "nombre": "Crema Efecto Glow", 
+        "descripcion": "Captura las impurezas como un imán para limpiar y desmaquillar perfectamente las pieles sensibles, sin necesidad de frotar ni de aclarar. Proporcionan alivio calmante para las pieles sensibles y estresadas. La piel, liberada del maquillaje, queda detoxificada y luminosa, sin sensaciones de tirantez o incomodidad.", 
+        "precio": 1793, 
+        "imagen": "Imagenes/producto15.png"
+    },
+
+    {
+        "id": 16, 
+        "nombre": "Crema Con Retinol y Vit. C", 
+        "descripcion": "Corrige y previene los signos del envejecimiento. Aporta emoliencia e hidratación.", 
+        "precio": 2112, 
+        "imagen": "Imagenes/producto16.png"
+    },
+
+    {
+        "id": 17, 
+        "nombre": "Serum De Retinol y Vit. C", 
+        "descripcion": "Hidrata dejando la piel suave e iluminada. Corrige y previene los signos del envejecimiento. Aporta emoliencia e hidratación.", 
+        "precio": 1376, 
+        "imagen": "Imagenes/producto17.png"
+    },
+
+    {
+        "id": 18, 
+        "nombre": "Locion Tonica Calmante", 
+        "descripcion": " Esta loción muy suave y protectora, no alcohólica, está especialmente concebida para pieles sensibles. Aporta minerales de propiedades desensibilizantes, que contribuyen a calmar y suavizan las pieles más sensibles y reactivas. Contiene vitaminas B1, B2, B6 y B12 de alta pureza, que funciona como coenzima participando en la adecuada respiración celular y protege la piel de las agresiones externas.", 
+        "precio": 1875, 
+        "imagen": "Imagenes/producto18.png"
+    }
 ]

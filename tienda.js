@@ -1,3 +1,42 @@
+// Agregado de productos de manera dinamica a la tienda
+const tablaProductos = document.querySelector('#fetchProductos')
+
+function datosProductos(){
+    fetch('tiendaProductos.json')
+        .then(respuesta => respuesta.json())
+        .then(productos => {
+            productos.forEach(producto =>{
+                const div = document.createElement('div');
+                    div.innerHTML +=  `
+                        <div class="tarjeta card h-100">
+                        <img src=${producto.imagen} class="tarjeta__imagen card-img-top" alt="producto">
+                        <div class="card-body">
+                        <h5 class="tarjeta__titulo card-title1" data-id="${producto.id}">${producto.nombre}</h5>
+                            <p>
+                            <a class="btn btn-light" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Beneficios</a>
+                                </p>
+                            <div class="collapse" id="collapseExample">
+                                    <div class="card card-body">
+                                        ${producto.descripcion}
+                                        <p><span>Precio $</span><span class="precio">${producto.precio}</span></p>
+                                        <div>
+                                        <small class="text-muted"><button type="button" class="agregar btn btn-secondary ">Agregar</button></small>
+                                        </div>                  
+                                            </div>
+                                        </div>              
+                                    </div>
+                                </div>
+                                        `
+            tablaProductos.appendChild(div);
+            })
+
+        });
+}
+
+datosProductos()
+
+// Funciones del Carrito de Compras
 const buttons = document.querySelectorAll('.agregar');
 const tbody = document.querySelector('.tbody')
 let carrito = []
@@ -117,3 +156,5 @@ window.onload = function() {
         renderCarrito();
     }
 }
+
+
