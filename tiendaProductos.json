@@ -1,0 +1,20 @@
+[
+    {"id": 1, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto1.png"},
+    {"id": 2, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto2.png"},
+    {"id": 3, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto3.png"},
+    {"id": 4, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto4.png"},
+    {"id": 5, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto5.png"},
+    {"id": 6, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto6.png"},
+    {"id": 7, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto7.png"},
+    {"id": 8, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto8.png"},
+    {"id": 9, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto9.png"},
+    {"id": 10, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto10.png"},
+    {"id": 11, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto11.png"},
+    {"id": 12, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto12.png"},
+    {"id": 13, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto13.png"},
+    {"id": 14, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto14.png"},
+    {"id": 15, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto15.png"},
+    {"id": 16, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto16.png"},
+    {"id": 17, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto17.png"},
+    {"id": 18, "nombre": "Agua Micelar 3 en 1", "descripcion": "hola", "precio": 1091, "imagen": "Imagenes/producto18.png"}
+]
