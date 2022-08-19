@@ -13,10 +13,10 @@ function datosProductos(){
                         <div class="card-body">
                         <h5 class="tarjeta__titulo card-title1" data-id="${producto.id}">${producto.nombre}</h5>
                             <p>
-                            <a class="btn btn-light" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <a class="btn btn-light" data-bs-toggle="collapse" href="#${producto.href}" role="button" aria-expanded="false" aria-controls="collapseExample">
                             Beneficios</a>
                                 </p>
-                            <div class="collapse" id="collapseExample">
+                            <div class="collapse" id="${producto.href}">
                                     <div class="card card-body">
                                         ${producto.descripcion}
                                         <p><span>Precio $</span><span class="precio">${producto.precio}</span></p>
