@@ -1,61 +1,29 @@
 // Agregado de productos de manera dinamica a la tienda
 const tablaProductos = document.querySelector('#fetchProductos')
 
-function datosProductos(){
-    fetch('tiendaProductos.json')
-        .then(respuesta => respuesta.json())
-        .then(productos => {
-            productos.forEach(producto =>{
-                const div = document.createElement('div');
-                    div.innerHTML +=  `
-                        <div class="tarjeta card h-100">
-                        <img src=${producto.imagen} class="tarjeta__imagen card-img-top" alt="producto">
-                        <div class="card-body">
-                        <h5 class="tarjeta__titulo card-title1" data-id="${producto.id}">${producto.nombre}</h5>
-                            <p>
-                            <a class="btn btn-light" data-bs-toggle="collapse" href="#${producto.href}" role="button" aria-expanded="false" aria-controls="collapseExample">
-                            Beneficios</a>
-                                </p>
-                            <div class="collapse" id="${producto.href}">
-                                    <div class="card card-body">
-                                        ${producto.descripcion}
-                                        <p><span>Precio $</span><span class="precio">${producto.precio}</span></p>
-                                        <div>
-                                        <small class="text-muted"><button type="button" class="agregar btn btn-secondary ">Agregar</button></small>
-                                        </div>                  
-                                            </div>
-                                        </div>              
-                                    </div>
-                                </div>
-                                        `
-            tablaProductos.appendChild(div);
-            })
-
-        });
-}
-
-datosProductos()
-
 // Funciones del Carrito de Compras
-const buttons = document.querySelectorAll('.agregar');
 const tbody = document.querySelector('.tbody')
 let carrito = []
-buttons.forEach(
-    function (button){
-        button.addEventListener('click', function(e){agregarAlCarrito(e)
-            Toastify({
-                text: "Producto Agregado",
-                duration: 2000,
-                newWindow: true,
-                gravity: "top",
-                position: "center", 
-                stopOnFocus: true,
-                style: {
-                background: "linear-gradient(to right, #00b09b, #96c93d)",
-                },
-        }).showToast();})
-    }
-)
+
+function agregarListeners() {
+    const buttons = document.querySelectorAll('.agregar');
+    buttons.forEach(
+        function (button){
+            button.addEventListener('click', function(e){agregarAlCarrito(e)
+                Toastify({
+                    text: "Producto Agregado",
+                    duration: 2000,
+                    newWindow: true,
+                    gravity: "top",
+                    position: "center", 
+                    stopOnFocus: true,
+                    style: {
+                    background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    },
+            }).showToast();})
+        }
+    )
+}
 
 function agregarAlCarrito(e){
     const button = e.target
@@ -148,6 +116,50 @@ function sumarLaCantidad(id, event){
 function agregarAlLocalStorage(){
     localStorage.setItem('carrito', JSON.stringify(carrito));
 }
+
+
+function cargarProductos() {
+    fetch('tiendaProductos.json')
+        .then(respuesta => respuesta.json())
+        .then(productos => {
+            productos.forEach(producto => {
+                const div = document.createElement('div');
+                div.innerHTML +=  `
+                    <div class="tarjeta card h-100">
+                      <img src=${producto.imagen} class="tarjeta__imagen card-img-top" alt="producto">
+                      <div class="card-body">
+                        <h5 class="tarjeta__titulo card-title1" data-id="${producto.id}">${producto.nombre}</h5>
+                        <p>
+                            <a class="btn btn-light" data-bs-toggle="collapse" href="#${producto.href}" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Beneficios
+                            </a>
+                        </p>
+                        <div class="collapse" id="${producto.href}">
+                          <div class="card card-body">
+                              <span>${producto.descripcion}</span>
+                              <p>
+                                <span>Precio $</span>
+                                <span class="precio">${producto.precio}</span>
+                              </p>
+                              <div>
+                                <small class="text-muted"><button type="button" class="agregar btn btn-secondary ">Agregar</button></small>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                `
+                tablaProductos.appendChild(div);
+            });
+        })
+        .then(() => {
+            agregarListeners()
+        });
+
+}
+
+cargarProductos()
+
 
 window.onload = function() {
     const guardado = JSON.parse(localStorage.getItem('carrito'));
